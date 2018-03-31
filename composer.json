@@ -40,7 +40,8 @@
         }
     },
     "replace": {
-        "laravel/valet": "*"
+        "laravel/valet": "*",
+        "weprovide/valet-plus": "*"
     },
     "require": {
         "php": ">=5.6",
