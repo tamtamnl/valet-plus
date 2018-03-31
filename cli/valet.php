@@ -680,6 +680,14 @@ if (is_dir(VALET_HOME_PATH)) {
     $app->command('ssh-key', function () {
         DevTools::sshkey();
     })->descriptions('Copy ssh key');
+
+    $app->command('drupal unlock [site]', function ($site) {
+        if ($site === null) {
+            $site = 'default';
+        }
+
+        Drupal::unlock($site);
+    })->descriptions('Unlock the drupal sites/{site}');
 }
 
 /**

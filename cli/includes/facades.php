@@ -45,4 +45,5 @@ class Ngrok extends Facade {}
 class PhpFpm extends Facade {}
 class DevTools extends Facade {}
 class Site extends Facade {}
+class Drupal extends Facade {}
 class Valet extends Facade {}
