@@ -680,6 +680,10 @@ if (is_dir(VALET_HOME_PATH)) {
     $app->command('ssh-key', function () {
         DevTools::sshkey();
     })->descriptions('Copy ssh key');
+
+    $app->command('log [filename]', function ($filename) {
+        Log::log($filename);
+    })->descriptions('Print valet-plus logs, use without filename for a list of logs.');
 }
 
 /**
