@@ -711,6 +711,10 @@ if (is_dir(VALET_HOME_PATH)) {
 
         Drupal::unlock($site);
     })->descriptions('Unlock the drupal sites/{site}');
+
+    $app->command('log [filename]', function ($filename) {
+        Log::log($filename);
+    })->descriptions('Print valet-plus logs, use without filename for a list of logs.');
 }
 
 /**

@@ -48,4 +48,5 @@ class PhpFpm extends Facade {}
 class DevTools extends Facade {}
 class Site extends Facade {}
 class Drupal extends Facade {}
+class Log extends Facade {}
 class Valet extends Facade {}
