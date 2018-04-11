@@ -1,3 +1,35 @@
+## Dept valet-plus PHP box
+
+Blazingly fast PHP development. For a more in depth guide of features read the readme of Valet+ https://github.com/weprovide/valet-plus . DDBox is a fork of Valet+ with fixes for several problems. This repository is forked instead of contributing to prevent the overhead of open source projects.
+
+## Requirements
+[Homebrew](https://brew.sh/) 
+
+## Installation
+1. Install or update [Homebrew](https://brew.sh/) to the latest version using brew update.  
+
+2. Install PHP 7.1 using Homebrew:  
+`brew install homebrew/php/php71`
+
+
+3. Install [Composer](https://getcomposer.org/) using Homebrew:  
+`brew install homebrew/php/composer`
+
+4. Install DDBox with the following composer command:  
+`composer global config repositories.satis composer https://satis.tamtam.nl && composer global require dept/dd_box`
+
+5. Make sure the ~/.composer/vendor/bin directory is in your system's "PATH".  
+Add export PATH="$PATH:$HOME/.composer/vendor/bin" to .bash_profile (for bash) or .zshrc (for zsh) depending on your shell (echo $SHELL)
+
+6. Run the valet install command:  
+`valet install`
+
+7. Once Valet is installed, try pinging any *.dev domain on your terminal using a command such as ping tamtam.dev. If Valet is installed correctly you should see this domain responding on 127.0.0.1. If not you might have to restart your system. Especially when coming from the Dinghy (docker) solution.
+
+## Export whole database
+`mysqldump -uroot -proot -v --all-databases > ddboxbackup.sql`
+
+
 <p align="center"><img width="200" src="images/logo.png"></p>
 
 ## Introduction
