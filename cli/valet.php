@@ -115,7 +115,7 @@ if (is_dir(VALET_HOME_PATH)) {
      * Register a symbolic link with Valet.
      */
     $app->command('link [name] [--secure]', function ($name, $secure) {
-        $domain = Site::link(getcwd(), $name = $name ?: basename(getcwd()));
+        $domain = Site::link(exec("pwd"), $name = $name ?: basename(getcwd()));
 
         if ($secure) {
             $this->runCommand('secure '.$name);
