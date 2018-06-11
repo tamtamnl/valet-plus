@@ -579,3 +579,4 @@ This project is a fork of [laravel/valet](https://github.com/laravel/valet). Tha
 ## Valet+ Authors
 
 - Tim Neutkens ([@timneutkens](https://github.com/timneutkens))
+- Lou van der Laarse ([@Neodork](https://github.com/Neodork))
